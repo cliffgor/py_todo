@@ -1,0 +1,17 @@
+<h1>Welcome to Todo List App</h1>
+
+<table>
+    <tr>
+        <th>
+            Item
+        </th>
+    </tr>
+        {% for task in object_list %}
+        <tr>
+            <td>{{task.title}}</td>
+        </tr>
+        {% empty %}
+        <h2>No Items added to the list</h2>
+        {% endfor %}
+    
+</table>
